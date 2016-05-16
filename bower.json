@@ -1,0 +1,24 @@
+{
+  "name": "fun-app",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mindi Torrey <minditorrey@me.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/minditorrey/fun-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "socket.io-client": "^1.4.6",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.6"
+  }
+}
