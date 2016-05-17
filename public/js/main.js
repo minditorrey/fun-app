@@ -9,16 +9,19 @@ $(() => {
 	socket.on('playerNum', playerNum => {
 		player = playerNum;
 		$('#status').text("Waiting for opponent.");
+
 	});
 
 	socket.on('gameStart', () => {
 		if(player) {
 			$('#dealButtons').show();
 			$('#status').text('Highest cards wins!');
+
 		}
 	});
 
 	$('button.dealBtn').on('click', dealCard);
+
 });
 
 function dealCard(e) {
@@ -31,6 +34,8 @@ function dealCard(e) {
 	var cardTwoValue;
 	if (player === 1){
 		cardOneValue = $('#p1').text();
+
+
 	} else if (player === 2) {
 		cardTwoValue = $('#p2').text();
 	}
