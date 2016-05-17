@@ -53,12 +53,11 @@ function dealCard(e) {
 			if(compare[i].playerOne) {
 				$('#p1').text(compare[i].playerOne);
 				// console.log('compare[i].playerOne:', compare[i].playerOne);
-			
+				
 			} else if(compare[i].playerTwo) {
 				$('#p2').text(compare[i].playerTwo);
 				// console.log('compare[i].playerTwo:', compare[i].playerTwo);
 			}
-
 		}
 
 		socket.on('winner', winner => {
@@ -68,17 +67,18 @@ function dealCard(e) {
 	})
 }
 
-
-
 function randomCard(playerNum) {
 
 	var f = Math.floor(Math.random() * 11);
 	console.log('f', f);
 	if (playerNum === 1){
+		
 		$('#p1').text(f);
+		
 	} else if (playerNum === 2) {
+		
 		$('#p2').text(f);
-	}
+	}		
 
 }
 
