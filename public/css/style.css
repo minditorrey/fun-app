@@ -1,0 +1,54 @@
+body {
+	margin: 10%;
+	margin-top: 5%;
+
+	/*background-image: url(https://pixabay.com/static/uploads/photo/2015/07/12/14/46/playing-card-842037_960_720.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;*/
+	background: indianred;
+}
+
+.well {
+	margin-top: 3%;
+}
+
+#p1 {
+	font-size: 36px;
+}
+
+#p2 {
+	font-size: 36px;
+}
+
+.two {
+	margin-left: 40%;
+}
+
+.one {
+	margin-left: 5%;
+}
+
+p {
+	margin-left: 40%;
+}
+
+hr {
+	background-color: #939292;
+}
+
+.dealBtn {
+	background-color: #ed3131;
+}
+
+#player1 {
+
+}
+
+#player2 {
+
+}
+
+.content {
+	background-color: blue;
+}

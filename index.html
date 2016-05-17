@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dave and Mindi's SuperFun App</title>
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/bower_components/semantic/dist/semantic.min.js"></script>
+	<script src="/bower_components/socket.io-client/socket.io.js"></script>
+	<script src="/js/main.js"></script>
+</head>
+<body>
+
+	<h3 class="ui block header">
+	  Dave and Mindi's SuperFun App!!!!!
+	</h3>
+
+	<h1 class="ui header" id="status">You are not in the game.</h1>
+
+	<!-- <button class="btn btn-lg dealBtn">Deal card</button> -->
+
+	<!-- <div class="ui inverted segment"> -->
+	<div>
+		  <button class="ui green button dealBtn">Deal card</button>
+	</div>
+	<br />
+	<!-- </div> -->
+
+	<!-- <div class="row" id="dealButtons">
+		<div class="col-sm-3 col-sm-offset-2 well" id='player1'>
+			<h3>Player 1 Card:</h3>
+				<p id='p1' class="cards"></p>
+		</div>
+
+		<div class="col-sm-3 col-sm-offset-2 well" id='player2'>
+			<h3>Player 2 Card:</h3>
+			<hr>
+				<p id='p2' class="cards"></p>
+		</div>
+	</div> -->
+
+	<div class="ui two column middle aligned very relaxed stackable grid">
+	  <div class="column">
+
+			<div class="ui link cards" id='player1'>
+				<div class="card">
+					<div class="content">
+						<div class="header">Player 1 Card:</div>
+						<div class="description">
+							<p id='p1' class="cards"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	  </div>
+	  <div class="ui vertical divider">
+	    O
+	  </div>
+
+	<div class="column">
+		<div class="ui link cards" id='player2'>
+			<div class="card">
+				<div class="content">
+					<div class="header">Player 2 Card:</div>
+					<div class="description">
+						<p id='p2' class="cards"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+
+
+
+
+
+	<!-- <div class="ui link cards" id='player1'>
+		<div class="card">
+			<div class="content">
+				<div class="header">Player 1 Card:</div>
+				<div class="description">
+					<p id='p1' class="cards"></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div class="ui link cards" id='player2'>
+		<div class="card">
+			<div class="content">
+				<div class="header">Player 2 Card:</div>
+				<div class="description">
+					<p id='p2' class="cards"></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+</body>
+</html>
