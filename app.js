@@ -21,8 +21,34 @@ var server = http.createServer(app);
 
 var io = require('socket.io')(server);
 
+var userCount = 0;
+var compare =[];
 
 
+io.on('connection', function(socket) {
+	userCount++;
+  
+  console.log('userCount111111111111', userCount);
+
+  if(userCount === 1 || userCount === 2) {
+    socket.emit('playerNum', userCount);
+  }
+
+  if(userCount === 2) {
+    io.emit('gameStart', null);
+  }
+
+
+
+socket.on('cardValue', cardValue => {
+	console.log('cardValue', cardValue);
+
+	
+
+})
+
+
+});
 
 
 
