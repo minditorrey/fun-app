@@ -27,8 +27,7 @@ var compare =[];
 
 io.on('connection', function(socket) {
 	userCount++;
-  
-  console.log('userCount111111111111', userCount);
+ 
 
   if(userCount === 1 || userCount === 2) {
     socket.emit('playerNum', userCount);
@@ -41,11 +40,50 @@ io.on('connection', function(socket) {
 
 
 socket.on('cardValue', cardValue => {
-	console.log('cardValue', cardValue);
+	compare.push(cardValue);
 
+	io.emit('compare', compare);
+
+	///have array w/ 2 objects
+
+	var result = null;
 	
+	var winner;
+	for (var i = 0; i < compare.length; i++) { 
+  		// if (compare[i].name === "string 1") { 
+    // 		result = array[i];
+    // 	break;
+  		// } 
+  			var cardOne;
+  			var cardTwo;
+			if(compare[i].playerOne) {
+				cardOne = compare[i].playerOne;
+				// $('#p1').text(compare[i].playerOne);
+				// console.log('compare[i].playerOne:', compare[i].playerOne);
+				
+			} else if(compare[i].playerTwo) {
+				cardTwo = compare[i].playerTwo;
+				// $('#p2').text(compare[i].playerTwo);
+				// console.log('compare[i].playerTwo:', compare[i].playerTwo);
+			}
 
-})
+			if ( parseInt(cardOne) > parseInt(cardTwo) ) {
+				winner = 'playerOne';	
+			} else {
+				winner = 'playerTwo';
+			}
+
+	}
+
+
+	///take the value from each object
+	///get largest
+	///send back winner is player with largest
+
+	io.emit('winner', winner);
+
+
+})	
 
 
 });
