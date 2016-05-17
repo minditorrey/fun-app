@@ -4,24 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Dave and Mindi's SuperFun App</title>
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css"> 
+  	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/css/style.css">
   	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
   	<script src="/bower_components/socket.io-client/socket.io.js"></script>
   	<script src="/js/main.js"></script>
 </head>
 <body>
+
 	<h1>Dave and Mindi's SuperFun App!</h1>
 
 	<h2 id="status">You are not in the game.</h2>
 
 	<button class="btn btn-lg dealBtn">Deal card</button>
-	
+
 	<div class="row" id="dealButtons">
-		
-		<div class="col-sm-3 col-sm-offset-2 well" id='player1'>			
+
+		<div class="col-sm-3 col-sm-offset-2 well" id='player1'>
 			<h3>Player 1 Card:</h3>
 				<p id='p1' class="cards"></p>
+
 		</div>
 
 		<div class="col-sm-3 col-sm-offset-2 well" id='player2'>
@@ -29,6 +31,7 @@
 			<hr>
 				<p id='p2' class="cards"></p>
 		</div>
+
 	</div>
 
 
