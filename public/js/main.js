@@ -31,6 +31,8 @@ function dealCard(e) {
 
 	randomCard(player);
 	var cardValue;
+	var cardOneValue;
+	var cardTwoValue;
 	if (player === 1){
 		cardOneValue = $('#p1').text();
 		console.log(cardOneValue);
@@ -39,7 +41,7 @@ function dealCard(e) {
 		cardTwoValue = $('#p2').text();
 		console.log(cardTwoValue);
 	}
-		// socket.emit('cardValue', {playerOne: cardOneValue, playerTwo: cardTwoValue });
+		socket.emit('cardValue', {playerOne: cardOneValue, playerTwo: cardTwoValue });
 	
 	
 
