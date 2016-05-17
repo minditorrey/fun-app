@@ -1,4 +1,51 @@
 body {
-	margin: 3%	;
+	margin: 10%;
+	margin-top: 5%;
+
+	background-color: 
+}
+
+.well {
+	margin-top: 3%;
+}
+
+#p1 {
+	font-size: 36px;
+}
+
+#p2 {
+	font-size: 36px;
+}
+
+.two {
+	margin-left: 40%;
+}
+
+.one {
+	margin-left: 5%;
+}
+
+p {
+	margin-left: 40%;
+}
+
+hr {
+	background-color: #939292;
+}
+
+.dealBtn {
+	background-color: #ed3131;
+}
+
+#player1 {
+
+	/*background: indianred;*/
+	background-image: url(http://www.photos-public-domain.com/wp-content/uploads/2011/01/four-of-a-kind-aces-playing-cards.jpg);
 
 }
+
+#player2 {
+	
+
+}
+
